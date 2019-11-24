@@ -5,15 +5,8 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d3dbe4' fill-opacity='0.44' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-.navbar fixed-bottom {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  border: black;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d3dbe4' fill-opacity='0.44' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .navbar-inverse a.navbar-brand {
@@ -31,13 +24,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .hero {
-  background: image_url('painting_scene.jpg') no-repeat center center fixed;
-  background-position-y: -315px;
+  background: image_url('painting_scene_cropped_02.png') no-repeat fixed;
+  background-position-x: 80%;
+  background-position-y: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 370px;
   height: 370px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
@@ -45,6 +38,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .frosty {
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  margin-top: 3%;
 }
 
 .frosty h1 {
@@ -57,6 +51,22 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 15px;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin: 10px;
 }
 
 .btn {
@@ -72,11 +82,25 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 body {
-
-
-background: -webkit-linear-gradient(90deg, rgb(206, 227, 230), rgb(245, 246, 246));
-background: linear-gradient(90deg, rgb(206, 227, 230), rgb(245, 246, 246));
-
-
+  background: -webkit-linear-gradient(90deg, rgb(206, 227, 230), rgb(245, 246, 246));
+  background: linear-gradient(90deg, rgb(206, 227, 230), rgb(245, 246, 246));
   font-family: 'Raleway', sans-serif;
+}
+
+form abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: none;
+  border-style: none;
+}
+
+.btn-light {
+  background: white;
+}
+
+.user_icon {
+  max-height: 1.5em;
 }
