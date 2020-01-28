@@ -38,7 +38,7 @@
     <% if !current_user.courses.exists? %>
     <div class="col-12 text-center">
       <p>You haven't created any courses yet.</p>
-      <p>Is there something you're good at? Consider <%= link_to 'teaching something!', new_instructor_course_path %></p>
+      <p>Is there something you're good at? Consider <%= link_to 'teaching it!', new_instructor_course_path %></p>
     </div>
   <% else %>
     <% current_user.courses.each do |course| %>
