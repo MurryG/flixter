@@ -14,9 +14,10 @@
     <% current_user.enrolled_courses.each do |course| %>
       <h3 class="text-center">
         <%= link_to course.title, course_path(course) %>
-      </h3>
+      <br />
       <br />
       <%= image_tag course.image.url, class: 'img-fluid' unless course.image.url.nil? %>
+      </h3>
       <br />
       <div class="row">
         <div class="col-12 col-sm-8">
@@ -44,9 +45,10 @@
     <% current_user.courses.each do |course| %>
       <h3 class="text-center">
         <%= link_to course.title, course_path(course) %>
-      </h3>
+      <br />
       <br />
       <%= image_tag course.image.url, class: 'img-fluid' unless course.image.url.nil? %>
+      </h3>
       <br />
       <div class="row">
         <div class="col-12 col-sm-8">
@@ -56,6 +58,7 @@
           <%= link_to "Go to Course Page", course_path(course), class: 'btn btn-large btn-primary' %>
         </div>
       </div>
+      <br />
       <hr class="col-6 offest-3">
       <br class="clr" />
     <% end %>
