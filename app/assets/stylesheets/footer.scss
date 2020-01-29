@@ -21,4 +21,14 @@ body {
   font-family: 'Raleway', sans-serif;
   padding: 10px 0px;
   margin-top: 30px;
+  font-weight: 100;
+}
+
+.social-button {
+  margin: 4px;
+  color: black;
+}
+
+.social a:hover {
+  text-decoration: none;
 }
